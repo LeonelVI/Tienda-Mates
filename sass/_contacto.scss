@@ -1,0 +1,54 @@
+.contactos{
+    display: flex;
+    justify-content: space-around;
+    margin: 200px 150px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    input{
+        margin: 10px 0;
+        border-radius: 5px;
+    }
+
+    textarea{
+        max-width: 400px;
+        max-height: 250px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+}
+
+.info-contacto{
+    p{
+        font-size: 20px;
+    }
+
+    li{
+        list-style: none;
+        margin-left: 0;
+        font-size: 18px;
+
+    }
+
+    i{
+        font-size: 35px;
+        margin: 5px;
+    }
+}
+
+.titulo-contacto-2{
+    margin-top: 50px;
+}
+
+.boton-contacto{
+    background-color: #171918;
+    color: white;
+    margin: 20px;
+        &:hover{
+            opacity: 0.8;
+        }
+}

@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165, 0.06) 0%, rgba(165, 165, 165, 0.06) 25%, rgba(193, 193, 193, 0.06) 25%, rgba(193, 193, 193, 0.06) 50%, rgba(221, 221, 221, 0.06) 50%, rgba(221, 221, 221, 0.06) 75%, rgba(249, 249, 249, 0.06) 75%, rgba(249, 249, 249, 0.06) 100%), radial-gradient(circle at 49% 76%, rgba(129, 129, 129, 0.06) 0%, rgba(129, 129, 129, 0.06) 25%, rgba(164, 164, 164, 0.06) 25%, rgba(164, 164, 164, 0.06) 50%, rgba(200, 200, 200, 0.06) 50%, rgba(200, 200, 200, 0.06) 75%, rgba(235, 235, 235, 0.06) 75%, rgba(235, 235, 235, 0.06) 100%), radial-gradient(circle at 22% 64%, rgba(173, 173, 173, 0.06) 0%, rgba(173, 173, 173, 0.06) 25%, rgba(119, 119, 119, 0.06) 25%, rgba(119, 119, 119, 0.06) 50%, rgba(64, 64, 64, 0.06) 50%, rgba(64, 64, 64, 0.06) 75%, rgba(10, 10, 10, 0.06) 75%, rgba(10, 10, 10, 0.06) 100%), linear-gradient(307deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+nav {
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+  height: 150px;
+  background-color: #171918;
+  font-size: 20px;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1;
+}
+
+.icono-navegador {
+  color: white;
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  color: rgb(255, 252, 252);
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  margin: 0 20px;
+  border-radius: 15px;
+}
+
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+}
+
+.menu-horizontal > li > a {
+  display: block;
+  padding: 0;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: overline;
+  margin: 0 30px;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 0 15px;
+  padding: 5px 5px 0 10px;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  color: white;
+  padding: 0;
+}
+
+.menu-vertical li a {
+  display: block;
+  color: white;
+  padding: 10px 15px 10px 5px;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  height: 350px;
+  background-color: #171918;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+}
+
+.navegacion {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 50px 0 0 100px;
+}
+.navegacion li {
+  list-style: none;
+  margin-top: 20px;
+}
+.navegacion a {
+  text-decoration: none;
+  color: white;
+}
+
+.contacto {
+  margin: 50px 700px 0 0;
+}
+
+.contacto i {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.contacto .titulo {
+  margin-top: 20px;
+}
+
+.contacto li {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.metodos {
+  margin: 30px 100px;
+}
+
+.titulo-productos {
+  padding: 5px;
+  text-align: center;
+  margin-top: 140px;
+  font-size: 30px;
+  background-color: #171918;
+  color: white;
+  height: 50px;
+  align-items: center;
+}
+
+.productos {
+  display: grid;
+  width: 50%;
+  margin: 100px auto 70px;
+  gap: 20px 0;
+  grid-template-columns: repeat(4fr);
+  grid-template-rows: repeat(4fr);
+  grid-template-areas: "p1 p2 p3 p4" "p5 p6 p7 p8" "p9 p10 p11 p12";
+}
+.productos p {
+  margin: 0 0 4px 0;
+}
+
+.boton-productos {
+  background-color: #171918;
+  color: white;
+  padding: 5px 100px;
+  border-radius: 15px;
+  display: flex;
+  margin: 0 auto 70px;
+}
+.boton-productos:hover {
+  opacity: 0.8;
+}
+
+.boton-producto {
+  display: flex;
+  justify-content: center;
+}
+.boton-producto button {
+  background-color: #171918;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.boton-producto button:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.boton-producto i {
+  margin-left: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.p-14 {
+  grid-area: p1;
+}
+.p-14 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-14 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-14 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-15 {
+  grid-area: p2;
+}
+.p-15 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-15 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-15 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-16 {
+  grid-area: p3;
+}
+.p-16 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-16 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-16 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-17 {
+  grid-area: p4;
+}
+.p-17 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-17 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-17 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-13 {
+  grid-area: p5;
+}
+.p-13 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-13 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-13 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-6 {
+  grid-area: p6;
+}
+.p-6 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-6 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-6 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-7 {
+  grid-area: p7;
+}
+.p-7 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-7 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-7 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-8 {
+  grid-area: p8;
+}
+.p-8 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-8 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-8 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-9 {
+  grid-area: p9;
+}
+.p-9 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-9 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-9 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-10 {
+  grid-area: p10;
+}
+.p-10 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-10 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-10 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-11 {
+  grid-area: p11;
+}
+.p-11 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-11 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-11 a {
+  width: 200px;
+  height: 200px;
+}
+
+.p-12 {
+  grid-area: p12;
+}
+.p-12 h2 {
+  text-align: center;
+  font-size: 20px;
+}
+.p-12 p {
+  text-align: center;
+  font-size: 18px;
+}
+.p-12 a {
+  width: 200px;
+  height: 200px;
+}
+
+.img-producto {
+  border: solid 1px #171918;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.img-producto:hover {
+  filter: brightness(0.6);
+  transition: 0.7s;
+}
+
+.portada {
+  width: 1000px;
+  margin: 0px auto;
+  height: 600px;
+  z-index: -1;
+}
+
+.img-portada {
+  height: 750px;
+  width: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 5;
+  border-right: double 15px #171918;
+  border-left: double 15px #171918;
+}
+
+.inicio-titulos {
+  font-weight: 1000;
+  display: flex;
+  font-size: 50px;
+  margin: 0px 0;
+  position: absolute;
+  top: 150px;
+  height: 820px;
+  left: 0;
+}
+.inicio-titulos p {
+  margin: 5px 20px;
+}
+.inicio-titulos .termos {
+  position: relative;
+  top: 225px;
+}
+.inicio-titulos .mates {
+  position: relative;
+  top: 300px;
+}
+
+.info-1 {
+  width: 60%;
+  margin: 100px auto;
+}
+
+.informacion {
+  display: flex;
+}
+.informacion img {
+  width: 450px;
+  height: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.informacion h2 {
+  margin-left: 30px;
+}
+.informacion p {
+  margin: 30px 0 0 30px;
+  text-align: justify;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.contactos {
+  display: flex;
+  justify-content: space-around;
+  margin: 200px 150px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+form input {
+  margin: 10px 0;
+  border-radius: 5px;
+}
+form textarea {
+  max-width: 400px;
+  max-height: 250px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.info-contacto p {
+  font-size: 20px;
+}
+.info-contacto li {
+  list-style: none;
+  margin-left: 0;
+  font-size: 18px;
+}
+.info-contacto i {
+  font-size: 35px;
+  margin: 5px;
+}
+
+.titulo-contacto-2 {
+  margin-top: 50px;
+}
+
+.boton-contacto {
+  background-color: #171918;
+  color: white;
+  margin: 20px;
+}
+.boton-contacto:hover {
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */

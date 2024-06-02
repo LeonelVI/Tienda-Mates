@@ -1,0 +1,25 @@
+.info-1{
+    width: 60%;
+    margin: 100px auto;
+    
+}
+
+.informacion{
+    display: flex;
+    img{
+        width: 450px;
+        height: 700px;
+        object-fit: cover;
+    } 
+
+    h2{
+        margin-left: 30px;
+    }
+
+    p{
+        margin: 30px 0 0 30px;
+        text-align: justify;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,39 @@
+.portada{
+    width: 1000px;
+    margin: 0px auto;
+    height: 600px;
+    z-index: -1;
+
+}
+
+.img-portada{
+    height: 750px;
+    width: 1000px;
+    object-fit: cover;
+    opacity: 5;
+    border-right: double 15px #171918;
+    border-left: double 15px #171918;
+}
+
+
+.inicio-titulos{
+    font-weight: 1000;
+    display: flex;
+    font-size: 50px;
+    margin: 0px 0;
+    position: absolute;
+    top: 150px;
+    height: 820px;
+    left:0;
+    p{
+        margin: 5px 20px;
+    }
+    .termos{
+        position: relative;
+        top: 225px;
+    }
+    .mates{
+        position: relative;
+        top: 300px;
+    }
+}
