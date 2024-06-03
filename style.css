@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  max-width: 100%;
+  width: 100%;
   display: flex;
   margin: auto;
   height: 150px;
@@ -19,7 +19,8 @@ nav {
   font-size: 20px;
   justify-content: space-around;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
+  position: sticky;
 }
 
 .icono-navegador {
@@ -54,8 +55,15 @@ nav {
   color: white;
   font-size: 20px;
   letter-spacing: 2px;
-  text-decoration: overline;
+  text-decoration: none;
+  border-top: solid 2px white;
   margin: 0 30px;
+  transition: 0.4s;
+}
+.menu-horizontal > li > a:hover {
+  border-top: none;
+  border-bottom: solid 2px white;
+  transition: 0.4s;
 }
 
 .menu-vertical {
@@ -108,7 +116,6 @@ nav {
 .contacto {
   margin: 50px 700px 0 0;
 }
-
 .contacto i {
   font-size: 25px;
   margin-top: 20px;
@@ -124,7 +131,42 @@ nav {
 }
 
 .metodos {
-  margin: 30px 100px;
+  margin: 50px 100px;
+}
+.metodos h2 {
+  margin-left: 10px;
+}
+
+.img-pagos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.img-pagos img {
+  width: 70px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 2px;
+}
+.img-pagos .mp {
+  background-color: white;
+}
+
+.envio {
+  margin: 30px 0 10px;
+}
+
+.img-envio {
+  width: 70px;
+  height: 30px;
+  margin-left: 12px;
+}
+.img-envio img {
+  width: 70px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .titulo-productos {
@@ -391,13 +433,13 @@ nav {
 
 .portada {
   width: 1000px;
-  margin: 0px auto;
-  height: 600px;
-  z-index: -1;
+  margin: auto;
+  height: 800px;
+  z-index: -2;
 }
 
 .img-portada {
-  height: 750px;
+  height: 970px;
   width: 1000px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -498,4 +540,107 @@ form textarea {
 }
 .boton-contacto:hover {
   opacity: 0.8;
+}
+
+.img-producto-1 {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  margin: auto;
+}
+
+.titulo-filtro {
+  position: relative;
+  top: 50px;
+  left: 350px;
+  padding: 0;
+  width: 100px;
+}
+
+.contenedor input {
+  position: relative;
+  top: 60px;
+  left: 340px;
+  background-color: #171918;
+}
+.contenedor label {
+  position: relative;
+  top: 60px;
+  left: 350px;
+}
+
+#mates:checked ~ #productos-1 .termo, #mates:checked ~ #productos-1 .bombilla,
+#mates:checked ~ #productos-1 .matera, #mates:checked ~ #productos-1 .yerbera, #mates:checked ~ #productos-1 .combo {
+  display: none;
+}
+
+#termos:checked ~ #productos-1 .mate, #termos:checked ~ #productos-1 .bombilla, #termos:checked ~ #productos-1 .matera,
+#termos:checked ~ #productos-1 .yerbera, #termos:checked ~ #productos-1 .combo {
+  display: none;
+}
+
+#bombillas:checked ~ #productos-1 .mate, #bombillas:checked ~ #productos-1 .termo, #bombillas:checked ~ #productos-1 .matera,
+#bombillas:checked ~ #productos-1 .yerbera, #bombillas:checked ~ #productos-1 .combo {
+  display: none;
+}
+
+#materas:checked ~ #productos-1 .mate, #materas:checked ~ #productos-1 .termo, #materas:checked ~ #productos-1 .bombilla,
+#materas:checked ~ #productos-1 .yerbera, #materas:checked ~ #productos-1 .combo {
+  display: none;
+}
+
+#yerberas:checked ~ #productos-1 .mate, #yerberas:checked ~ #productos-1 .termo, #yerberas:checked ~ #productos-1 .bombilla,
+#yerberas:checked ~ #productos-1 .matera, #yerberas:checked ~ #productos-1 .combo {
+  display: none;
+}
+
+#combos:checked ~ #productos-1 .mate, #combos:checked ~ #productos-1 .termo, #combos:checked ~ #productos-1 .bombilla,
+#combos:checked ~ #productos-1 .matera, #combos:checked ~ #productos-1 .yerbera {
+  display: none;
+}
+
+#productos-1 {
+  position: relative;
+  top: -150px;
+  width: 50%;
+  display: grid;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: repeat(4fr);
+  grid-template-rows: repeat(6fr);
+  grid-template-areas: "pr1 pr2 pr3 pr4" "pr5 pr6 pr7 pr8" "pr9 pr10 pr11 pr12" "pr13 pr14 pr15 pr16" "pr17 pr18 pr19 pr20";
+}
+#productos-1 img {
+  border: solid 1px black;
+}
+#productos-1 h2 {
+  font-size: 20px;
+  text-align: center;
+}
+#productos-1 p {
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+.boton-producto-1 {
+  text-align: center;
+  color: black;
+}
+.boton-producto-1 button {
+  background-color: #171918;
+  color: white;
+  padding: 3px 20px;
+}
+.boton-producto-1 button:hover {
+  opacity: 0.8;
+}
+
+.productos-titulo {
+  text-align: center;
+  margin: 30px 0 0 0;
+  background-color: #171918;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

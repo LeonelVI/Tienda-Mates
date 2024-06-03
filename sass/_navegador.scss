@@ -1,5 +1,5 @@
 nav {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     margin: auto;
     height: 150px;
@@ -7,7 +7,8 @@ nav {
     font-size: 20px;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
+    z-index:2;
+    position: sticky;
   }
   
   .icono-navegador{
@@ -42,8 +43,15 @@ nav {
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
-    text-decoration:overline;
-    margin:0 30px;
+    text-decoration: none;
+    border-top: solid 2px white;
+    margin:0 30px;  
+    transition: 0.4s;
+    &:hover{
+      border-top: none;
+      border-bottom: solid 2px white;
+      transition: 0.4s;
+    }
   
   }
   

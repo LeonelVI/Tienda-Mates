@@ -1,0 +1,114 @@
+.img-producto-1{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+}
+
+.titulo-filtro{
+    position: relative;
+    top: 50px;
+    left: 350px;
+    padding: 0;
+    width: 100px;
+}
+
+
+.contenedor{
+    input{
+        position: relative;
+        top: 60px;
+        left: 340px;
+        background-color: #171918;
+    }
+    
+    label{
+        position: relative;
+        top: 60px;
+        left: 350px;
+    }
+}
+
+
+#mates:checked ~ #productos-1 .termo, #mates:checked ~ #productos-1 .bombilla, 
+ #mates:checked ~ #productos-1 .matera, #mates:checked ~ #productos-1 .yerbera,  #mates:checked ~ #productos-1 .combo{
+    display: none;
+}
+
+#termos:checked ~ #productos-1 .mate, #termos:checked ~ #productos-1 .bombilla, #termos:checked ~ #productos-1 .matera,
+#termos:checked ~ #productos-1 .yerbera, #termos:checked ~ #productos-1 .combo{
+    display: none;
+}
+
+#bombillas:checked ~ #productos-1 .mate, #bombillas:checked ~ #productos-1 .termo, #bombillas:checked ~ #productos-1 .matera,
+ #bombillas:checked ~ #productos-1 .yerbera, #bombillas:checked ~ #productos-1 .combo{
+    display: none;
+ }
+
+#materas:checked ~ #productos-1 .mate, #materas:checked ~ #productos-1 .termo, #materas:checked ~ #productos-1 .bombilla,
+ #materas:checked ~ #productos-1 .yerbera, #materas:checked ~ #productos-1 .combo{
+    display: none;
+ }
+
+#yerberas:checked ~ #productos-1 .mate, #yerberas:checked ~ #productos-1 .termo, #yerberas:checked ~ #productos-1 .bombilla,
+#yerberas:checked ~ #productos-1 .matera, #yerberas:checked ~ #productos-1 .combo{
+    display: none;
+}
+
+#combos:checked ~ #productos-1 .mate, #combos:checked  ~  #productos-1 .termo, #combos:checked  ~ #productos-1 .bombilla,
+ #combos:checked  ~ #productos-1 .matera, #combos:checked  ~ #productos-1 .yerbera{
+    display: none;
+ }
+
+#productos-1{
+    position: relative;
+    top: -150px;
+    width: 50%;
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+    grid-template-columns: repeat(4fr);
+    grid-template-rows: repeat(6fr);
+    grid-template-areas: "pr1 pr2 pr3 pr4"
+                         "pr5 pr6 pr7 pr8"
+                         "pr9 pr10 pr11 pr12"
+                         "pr13 pr14 pr15 pr16"
+                         "pr17 pr18 pr19 pr20";
+
+    img{
+        border: solid 1px black;
+    }
+
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+
+    }
+}
+
+.boton-producto-1{
+    text-align: center;
+    color: black;
+    button{
+        background-color: #171918;
+        color: white;
+        padding: 3px 20px;
+            &:hover{
+                opacity: 0.8;
+            }
+    }
+}
+
+.productos-titulo{
+    text-align: center;
+    margin: 30px 0 0 0;
+    background-color: #171918;
+    color: white;
+}
