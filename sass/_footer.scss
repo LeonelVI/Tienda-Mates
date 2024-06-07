@@ -136,7 +136,7 @@
 
 @media(max-width:1200px){
   .footer{
-    height: 400px;
+    height: 600px;
     width: 100%;
     margin-top: 200px;
     flex-direction: column;
@@ -145,34 +145,39 @@
   }
 
   .navegacion{
-    margin-top: 10px;
+    margin-top: 60px;
     position: absolute;
     left: 100px;
       h2{
-        font-size: 25px;
+        font-size: 40px;
       }
       li{
         margin-top: 10px;
+        font-size: 20px;
       }
   }
 
   .contacto{
-    margin-top: 10px;
+    margin-top: 60px;
     position: absolute;
     right: -500px;
     top: 0;
 
     h2{
-      font-size: 25px;
+      font-size: 40px;
+    }
+
+    li{
+      font-size: 18px;
     }
   }
 
   .metodos{
     position: absolute;
-    top: 130px;
+    top: 250px;
     left: 80px;
     h2{ 
-      font-size: 20px;
+      font-size: 30px;
     }
   }
 

@@ -110,63 +110,90 @@ nav {
 }
 
 @media (max-width: 1200px) {
-  .titulo-productos {
-    width: 100%;
-  }
-  .menu-horizontal {
-    flex-direction: column;
-    position: absolute;
-    height: 100vh;
-    right: -100vh;
-    top: 0;
-    padding-top: 30px;
-    background-color: #171918;
-    z-index: 2;
-  }
-  .menu-horizontal li > a {
-    margin: 20px;
-  }
-  .menu-vertical {
-    position: absolute;
-    top: 100px;
-    right: 190px;
-    display: none;
-    list-style: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 0 0 15px;
-    padding: 0px 0px 0 10px;
-  }
-  .menu-horizontal li:hover .menu-vertical {
-    display: block;
-  }
-  .menu-vertical li:hover {
-    color: white;
+  .logo {
+    color: rgb(255, 252, 252);
     padding: 0;
-  }
-  .icono-navegador {
-    color: white;
-    align-items: center;
+    text-decoration: none;
     display: flex;
-    position: absolute;
-    right: 55px;
-    top: 100px;
+    align-items: center;
   }
-  .icono-menu {
-    display: block;
-    color: white;
-    font-size: 35px;
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    z-index: 1;
+  .logo img {
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    margin: 0 20px;
+    border-radius: 15px;
   }
-  .icono-menu:hover + .menu-horizontal {
-    right: 0vh;
-  }
-  .menu-horizontal:hover {
-    right: 0vh;
+  header {
+    height: 240px;
   }
 }
+.titulo-productos {
+  width: 100%;
+}
+
+.menu-horizontal {
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  right: -100vh;
+  top: 0;
+  padding-top: 30px;
+  background-color: #171918;
+  z-index: 2;
+}
+.menu-horizontal li > a {
+  margin: 20px;
+}
+
+.menu-vertical {
+  position: absolute;
+  top: 100px;
+  right: 190px;
+  display: none;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 0 15px;
+  padding: 0px 0px 0 10px;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li:hover {
+  color: white;
+  padding: 0;
+}
+
+.icono-navegador {
+  color: white;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  font-size: 25px;
+  right: 55px;
+  top: 150px;
+}
+
+.icono-menu {
+  display: block;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  z-index: 1;
+}
+
+.icono-menu:hover + .menu-horizontal {
+  right: 0vh;
+}
+
+.menu-horizontal:hover {
+  right: 0vh;
+}
+
 .footer {
   width: 100%;
   height: 350px;
@@ -294,7 +321,7 @@ nav {
 }
 @media (max-width: 1200px) {
   .footer {
-    height: 400px;
+    height: 600px;
     width: 100%;
     margin-top: 200px;
     flex-direction: column;
@@ -302,32 +329,36 @@ nav {
     position: relative;
   }
   .navegacion {
-    margin-top: 10px;
+    margin-top: 60px;
     position: absolute;
     left: 100px;
   }
   .navegacion h2 {
-    font-size: 25px;
+    font-size: 40px;
   }
   .navegacion li {
     margin-top: 10px;
+    font-size: 20px;
   }
   .contacto {
-    margin-top: 10px;
+    margin-top: 60px;
     position: absolute;
     right: -500px;
     top: 0;
   }
   .contacto h2 {
-    font-size: 25px;
+    font-size: 40px;
+  }
+  .contacto li {
+    font-size: 18px;
   }
   .metodos {
     position: absolute;
-    top: 130px;
+    top: 250px;
     left: 80px;
   }
   .metodos h2 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .envio {
     margin-top: 5px;
@@ -874,6 +905,19 @@ nav {
   top: 300px;
 }
 
+@media (max-width: 1200px) {
+  .portada {
+    width: 100%;
+  }
+  .img-portada {
+    height: 970px;
+    width: 1000px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    opacity: 5;
+    border: none;
+  }
+}
 .info-1 {
   width: 60%;
   margin: 200px auto;

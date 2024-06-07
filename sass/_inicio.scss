@@ -3,9 +3,6 @@
     margin: auto;
     height: 800px;
     z-index: -2;
-
-
-
 }
 
 .img-portada{
@@ -38,4 +35,19 @@
         position: relative;
         top: 300px;
     }
+}
+
+@media(max-width:1200px){
+    .portada{
+        width: 100%;
+    }
+
+    
+.img-portada{
+    height: 970px;
+    width: 1000px;
+    object-fit: cover;
+    opacity: 5;
+    border: none;
+}
 }
