@@ -10,23 +10,41 @@ body {
   background-image: radial-gradient(circle at 69% 86%, rgba(165, 165, 165, 0.06) 0%, rgba(165, 165, 165, 0.06) 25%, rgba(193, 193, 193, 0.06) 25%, rgba(193, 193, 193, 0.06) 50%, rgba(221, 221, 221, 0.06) 50%, rgba(221, 221, 221, 0.06) 75%, rgba(249, 249, 249, 0.06) 75%, rgba(249, 249, 249, 0.06) 100%), radial-gradient(circle at 49% 76%, rgba(129, 129, 129, 0.06) 0%, rgba(129, 129, 129, 0.06) 25%, rgba(164, 164, 164, 0.06) 25%, rgba(164, 164, 164, 0.06) 50%, rgba(200, 200, 200, 0.06) 50%, rgba(200, 200, 200, 0.06) 75%, rgba(235, 235, 235, 0.06) 75%, rgba(235, 235, 235, 0.06) 100%), radial-gradient(circle at 22% 64%, rgba(173, 173, 173, 0.06) 0%, rgba(173, 173, 173, 0.06) 25%, rgba(119, 119, 119, 0.06) 25%, rgba(119, 119, 119, 0.06) 50%, rgba(64, 64, 64, 0.06) 50%, rgba(64, 64, 64, 0.06) 75%, rgba(10, 10, 10, 0.06) 75%, rgba(10, 10, 10, 0.06) 100%), linear-gradient(307deg, rgb(255, 255, 255), rgb(255, 255, 255));
 }
 
-nav {
-  width: 100%;
+.icono-menu {
+  display: none;
+}
+
+.icono-navegador {
+  display: none;
+}
+
+header {
   display: flex;
-  margin: auto;
-  height: 150px;
   background-color: #171918;
-  font-size: 20px;
+  position: relative;
+  width: 100%;
+  height: 150px;
   justify-content: space-around;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  height: 150px;
+  font-size: 20px;
   align-items: center;
   z-index: 2;
-  position: sticky;
 }
 
 .icono-navegador {
   color: white;
   align-items: center;
   display: flex;
+  position: absolute;
+  right: 55px;
+  top: 60px;
+  font-size: 20px;
 }
 
 .logo {
@@ -91,6 +109,61 @@ nav {
   text-decoration: none;
 }
 
+@media (max-width: 1200px) {
+  .menu-horizontal {
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    right: -100vh;
+    top: 0;
+    padding-top: 30px;
+    background-color: #171918;
+    z-index: 2;
+  }
+  .menu-horizontal li > a {
+    margin: 20px;
+  }
+  .menu-vertical {
+    position: absolute;
+    top: 100px;
+    right: 190px;
+    display: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 0 15px;
+    padding: 0px 0px 0 10px;
+  }
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
+  .menu-vertical li:hover {
+    color: white;
+    padding: 0;
+  }
+  .icono-navegador {
+    color: white;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    right: 55px;
+    top: 100px;
+  }
+  .icono-menu {
+    display: block;
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 1;
+  }
+  .icono-menu:hover + .menu-horizontal {
+    right: 0vh;
+  }
+  .menu-horizontal:hover {
+    right: 0vh;
+  }
+}
 .footer {
   width: 100%;
   height: 350px;
@@ -169,6 +242,100 @@ nav {
      object-fit: cover;
 }
 
+@media (max-width: 1660px) {
+  .footer {
+    height: 400px;
+    width: 100%;
+    margin-top: 200px;
+    flex-direction: column;
+    background-color: #171918;
+    position: relative;
+  }
+  .navegacion {
+    margin-top: 10px;
+    position: absolute;
+    left: 100px;
+  }
+  .navegacion h2 {
+    font-size: 25px;
+  }
+  .navegacion li {
+    margin-top: 10px;
+  }
+  .contacto {
+    margin-top: 10px;
+    position: absolute;
+    right: -500px;
+    top: 0;
+  }
+  .contacto h2 {
+    font-size: 25px;
+  }
+  .metodos {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+  }
+  .metodos h2 {
+    font-size: 20px;
+  }
+  .envio {
+    margin-top: 5px;
+  }
+  .img-pagos {
+    width: 300px;
+  }
+  .img-pagos img {
+    width: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    height: 400px;
+    width: 100%;
+    margin-top: 200px;
+    flex-direction: column;
+    background-color: #171918;
+    position: relative;
+  }
+  .navegacion {
+    margin-top: 10px;
+    position: absolute;
+    left: 100px;
+  }
+  .navegacion h2 {
+    font-size: 25px;
+  }
+  .navegacion li {
+    margin-top: 10px;
+  }
+  .contacto {
+    margin-top: 10px;
+    position: absolute;
+    right: -500px;
+    top: 0;
+  }
+  .contacto h2 {
+    font-size: 25px;
+  }
+  .metodos {
+    position: absolute;
+    top: 130px;
+    left: 80px;
+  }
+  .metodos h2 {
+    font-size: 20px;
+  }
+  .envio {
+    margin-top: 5px;
+  }
+  .img-pagos {
+    width: 300px;
+  }
+  .img-pagos img {
+    width: 50px;
+  }
+}
 .titulo-productos {
   padding: 5px;
   text-align: center;
@@ -196,6 +363,7 @@ nav {
 .boton-productos {
   background-color: #171918;
   color: white;
+  text-decoration: none;
   padding: 5px 100px;
   border-radius: 15px;
   display: flex;
@@ -203,6 +371,10 @@ nav {
 }
 .boton-productos:hover {
   opacity: 0.8;
+}
+
+.boton-productos a {
+  text-decoration: none;
 }
 
 .boton-producto {
@@ -431,6 +603,24 @@ nav {
   transition: 0.7s;
 }
 
+@media (max-width: 1660px) {
+  .productos {
+    display: grid;
+    width: 100%;
+    gap: 15px 0;
+    grid-template-columns: repeat(2fr);
+  }
+}
+@media (max-width: 1200px) {
+  .productos {
+    display: grid;
+    width: 70%;
+    margin: 100px auto;
+    grid-template-columns: repeat(2fr);
+    grid-template-rows: repeat(4fr);
+    grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p8" "p9 p10" "p11 p12";
+  }
+}
 .portada {
   width: 1000px;
   margin: auto;
@@ -472,7 +662,7 @@ nav {
 
 .info-1 {
   width: 60%;
-  margin: 100px auto;
+  margin: 200px auto;
 }
 
 .informacion {
@@ -494,10 +684,32 @@ nav {
   letter-spacing: 1px;
 }
 
+@media (max-width: 1024px) {
+  .info-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .informacion {
+    flex-direction: column;
+    margin: auto;
+  }
+  .informacion img {
+    margin: auto;
+  }
+  .informacion h2 {
+    text-align: center;
+  }
+  .informacion p {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+  }
+}
 .contactos {
   display: flex;
   justify-content: space-around;
-  margin: 200px 150px;
+  margin: 300px 150px;
 }
 
 form {
@@ -643,4 +855,40 @@ form textarea {
   margin: 30px 0 0 0;
   background-color: #171918;
   color: white;
+}
+
+.img-pasos {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid 1px #171918;
+}
+
+.titulo-cuidados {
+  background-color: #171918;
+  margin-top: 190px;
+  color: white;
+  font-size: 23px;
+  padding: 15px 0 15px 280px;
+}
+
+.tips {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(4fr);
+  grid-template-rows: repeat(1fr);
+  grid-template-areas: "ps1 ps2 ps3 ps4";
+  margin: 50px auto;
+  gap: 50px;
+}
+
+.info-cuidados {
+  width: 70%;
+  margin: 50px auto 100px;
+}
+.info-cuidados p {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */

@@ -78,3 +78,114 @@
       object-fit: cover;
     }
   }
+
+@media (max-width:1660px){
+  .footer{
+    height: 400px;
+    width: 100%;
+    margin-top: 200px;
+    flex-direction: column;
+    background-color: #171918;
+    position: relative;
+  }
+
+  .navegacion{
+    margin-top: 10px;
+    position: absolute;
+    left: 100px;
+      h2{
+        font-size: 25px;
+      }
+      li{
+        margin-top: 10px;
+      }
+  }
+
+  .contacto{
+    margin-top: 10px;
+    position: absolute;
+    right: -500px;
+    top: 0;
+
+    h2{
+      font-size: 25px;
+    }
+  }
+
+  .metodos{
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    h2{ 
+      font-size: 20px;
+    }
+  }
+
+  .envio{
+    margin-top: 5px;
+  }
+
+  .img-pagos{
+    width: 300px;
+    img{
+      width: 50px;
+    }
+  }
+
+}
+
+@media(max-width:1200px){
+  .footer{
+    height: 400px;
+    width: 100%;
+    margin-top: 200px;
+    flex-direction: column;
+    background-color: #171918;
+    position: relative;
+  }
+
+  .navegacion{
+    margin-top: 10px;
+    position: absolute;
+    left: 100px;
+      h2{
+        font-size: 25px;
+      }
+      li{
+        margin-top: 10px;
+      }
+  }
+
+  .contacto{
+    margin-top: 10px;
+    position: absolute;
+    right: -500px;
+    top: 0;
+
+    h2{
+      font-size: 25px;
+    }
+  }
+
+  .metodos{
+    position: absolute;
+    top: 130px;
+    left: 80px;
+    h2{ 
+      font-size: 20px;
+    }
+  }
+
+  .envio{
+    margin-top: 5px;
+  }
+
+  .img-pagos{
+    width: 300px;
+    img{
+      width: 50px;
+    }
+  }
+
+}
+

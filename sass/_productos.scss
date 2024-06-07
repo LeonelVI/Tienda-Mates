@@ -27,6 +27,7 @@
 .boton-productos{
     background-color: #171918;
     color: white;
+    text-decoration: none;
     padding: 5px 100px;
     border-radius: 15px;
     display: flex;
@@ -34,9 +35,12 @@
         &:hover{
             opacity: 0.8;
         }
-
-    
 }
+
+.boton-productos a{
+    text-decoration: none;
+}
+
 
 .boton-producto{
     display: flex;
@@ -325,3 +329,31 @@
     filter: brightness(0.6);
     transition: 0.7s;
 }
+
+@media (max-width:1660px){
+ .productos{
+    display: grid;
+    width: 100%;
+    gap: 15px 0;
+    grid-template-columns: repeat(2fr);
+ }
+
+}
+
+@media (max-width:1200px){
+    .productos{
+        display: grid;
+        width: 70%;
+        margin: 100px auto;
+        grid-template-columns: repeat(2fr);
+        grid-template-rows: repeat(4fr);
+        grid-template-areas: "p1 p2"
+                             "p3 p4"
+                             "p5 p6" 
+                             "p7 p8"
+                             "p9 p10"
+                              "p11 p12";   
+    }
+}
+
+
