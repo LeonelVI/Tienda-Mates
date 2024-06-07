@@ -96,6 +96,11 @@ nav {
   
   }
   @media (max-width:1200px){
+
+    .titulo-productos{
+      width: 100%;
+    }
+    
     .menu-horizontal{
       flex-direction: column;
       position: absolute;
@@ -158,6 +163,3 @@ nav {
 
       }
       
-    
-
-  

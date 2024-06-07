@@ -110,6 +110,9 @@ nav {
 }
 
 @media (max-width: 1200px) {
+  .titulo-productos {
+    width: 100%;
+  }
   .menu-horizontal {
     flex-direction: column;
     position: absolute;
@@ -614,11 +617,222 @@ nav {
 @media (max-width: 1200px) {
   .productos {
     display: grid;
-    width: 70%;
+    width: 80%;
     margin: 100px auto;
     grid-template-columns: repeat(2fr);
     grid-template-rows: repeat(4fr);
     grid-template-areas: "p1 p2" "p3 p4" "p5 p6" "p7 p8" "p9 p10" "p11 p12";
+    gap: 30px;
+  }
+  .p-14 {
+    grid-area: p1;
+  }
+  .p-14 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-14 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-14 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-15 {
+    grid-area: p2;
+  }
+  .p-15 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-15 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-15 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-16 {
+    grid-area: p3;
+  }
+  .p-16 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-16 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-16 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-17 {
+    grid-area: p4;
+  }
+  .p-17 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-17 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-17 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-13 {
+    grid-area: p5;
+  }
+  .p-13 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-13 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-13 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-6 {
+    grid-area: p6;
+  }
+  .p-6 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-6 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-6 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-7 {
+    grid-area: p7;
+  }
+  .p-7 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-7 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-7 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-8 {
+    grid-area: p8;
+  }
+  .p-8 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-8 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-8 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-9 {
+    grid-area: p9;
+  }
+  .p-9 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-9 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-9 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-10 {
+    grid-area: p10;
+  }
+  .p-10 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-10 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-10 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-11 {
+    grid-area: p11;
+  }
+  .p-11 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-11 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-11 a {
+    width: 200px;
+    height: 200px;
+  }
+  .p-12 {
+    grid-area: p12;
+  }
+  .p-12 h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .p-12 p {
+    text-align: center;
+    font-size: 25px;
+  }
+  .p-12 a {
+    width: 200px;
+    height: 200px;
+  }
+  .img-producto {
+    border: solid 1px #171918;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .img-producto:hover {
+    filter: brightness(0.6);
+    transition: 0.7s;
+  }
+  .boton-productos {
+    background-color: #171918;
+    color: white;
+    text-decoration: none;
+    padding: 10px 100px;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto 70px;
+  }
+  .boton-productos:hover {
+    opacity: 0.8;
+  }
+  .boton-productos a {
+    font-size: 20px;
+  }
+  .boton-producto {
+    padding: 10px;
+    font-size: 20px;
   }
 }
 .portada {

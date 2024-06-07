@@ -343,7 +343,7 @@
 @media (max-width:1200px){
     .productos{
         display: grid;
-        width: 70%;
+        width: 80%;
         margin: 100px auto;
         grid-template-columns: repeat(2fr);
         grid-template-rows: repeat(4fr);
@@ -353,7 +353,297 @@
                              "p7 p8"
                              "p9 p10"
                               "p11 p12";   
+        gap: 30px;
     }
+
+    
+.p-14{
+    grid-area: p1;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-15{
+    grid-area: p2;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-16{
+    grid-area: p3;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-17{
+    grid-area: p4;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-13{
+    grid-area: p5;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-6{
+    grid-area: p6;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-7{
+    grid-area: p7;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-8{
+    grid-area: p8;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-9{
+    grid-area: p9;
+ 
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-10{
+    grid-area: p10;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-11{
+    grid-area: p11;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+
+.p-12{
+    grid-area: p12;
+
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    a{
+        width: 200px;
+        height: 200px;
+    }
+    
+}
+
+.img-producto{
+    border: solid 1px #171918;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin: 0 auto
+}
+
+.img-producto:hover{
+    filter: brightness(0.6);
+    transition: 0.7s;
+}
+
+
+.boton-productos{
+    background-color: #171918;
+    color: white;
+    text-decoration: none;
+    padding: 10px 100px;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto 70px;
+        &:hover{
+            opacity: 0.8;
+        }
+        a{
+            font-size: 20px;
+        }
+}
+
+.boton-producto{
+    padding: 10px;
+    font-size: 20px;
+}
+
 }
 
 
