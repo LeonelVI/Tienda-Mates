@@ -136,7 +136,7 @@
 
 @media(max-width:1200px){
   .footer{
-    height: 600px;
+    height: 700px;
     width: 100%;
     margin-top: 200px;
     flex-direction: column;
@@ -145,39 +145,42 @@
   }
 
   .navegacion{
-    margin-top: 60px;
+    top: 60px;
     position: absolute;
-    left: 100px;
+    left: 10px;
       h2{
-        font-size: 40px;
+        font-size: 50px;
       }
       li{
         margin-top: 10px;
-        font-size: 20px;
+        font-size: 30px;
       }
   }
 
   .contacto{
-    margin-top: 60px;
     position: absolute;
-    right: -500px;
-    top: 0;
+    right: -600px;
+    top: 60px;
+    i{
+      font-size: 50px;
+      padding: 5px;
+    }
 
     h2{
-      font-size: 40px;
+      font-size: 50px;
     }
 
     li{
-      font-size: 18px;
+      font-size: 25px;
     }
   }
 
   .metodos{
     position: absolute;
-    top: 250px;
-    left: 80px;
+    top: 300px;
+    left: 10px;
     h2{ 
-      font-size: 30px;
+      font-size: 50px;
     }
   }
 
@@ -188,8 +191,14 @@
   .img-pagos{
     width: 300px;
     img{
-      width: 50px;
+      width: 70px;
+      height: 50px;
     }
+  }
+
+  .img-envio{
+    width: 70px;
+    height: 50px;
   }
 
 }

@@ -39,6 +39,7 @@
 
 .boton-productos a{
     text-decoration: none;
+    color: white;
 }
 
 
@@ -343,7 +344,7 @@
 @media (max-width:1200px){
     .productos{
         display: grid;
-        width: 80%;
+        width: 100%;
         margin: 100px auto;
         grid-template-columns: repeat(2fr);
         grid-template-rows: repeat(4fr);
@@ -352,7 +353,7 @@
                              "p5 p6" 
                              "p7 p8"
                              "p9 p10"
-                              "p11 p12";   
+                            "p11 p12";   
         gap: 30px;
     }
 
@@ -640,8 +641,8 @@
 }
 
 .boton-producto{
-    padding: 10px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 25px;
 }
 
 }
