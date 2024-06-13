@@ -78,7 +78,7 @@
       object-fit: cover;
     }
   }
-
+/*
 @media (max-width:1660px){
   .footer{
     height: 400px;
@@ -202,4 +202,51 @@
   }
 
 }
+*/
 
+
+@media (max-width:1220px){
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+
+}
+
+@media (max-width:660px){
+  .iconos-contacto{
+    i{
+      margin: 2px 5px;
+    }
+  }
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navegacion{
+    margin: 5px auto
+  }
+
+  .contacto{
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+  }
+
+  .metodos{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: auto;
+  }
+}
+
+@media (max-width:400px){
+  .img-pagos{
+    width: 300px;
+    margin: 0;
+  }
+}
