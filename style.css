@@ -187,18 +187,37 @@ nav {
     right: 0vh;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.iconos-redes {
+  font-size: 30px;
+}
+
 .footer {
   width: 100%;
-  height: 350px;
+  height: auto;
   background-color: #171918;
   display: flex;
-  color: white;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.footer-informacion {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
 .navegacion {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin: 50px 0 0 100px;
+  color: white;
+}
+.navegacion h2 {
+  font-size: 30px;
 }
 .navegacion li {
   list-style: none;
@@ -210,53 +229,34 @@ nav {
 }
 
 .contacto {
-  margin: 50px 700px 0 0;
+  color: white;
 }
-.contacto i {
-  font-size: 25px;
-  margin-top: 20px;
+.contacto h2 {
+  font-size: 30px;
 }
-
-.contacto .titulo {
-  margin-top: 20px;
-}
-
 .contacto li {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .metodos {
-  margin: 50px 100px;
-}
-.metodos h2 {
-  margin-left: 10px;
+  color: white;
+  margin: 50px 50px 50px 0;
 }
 
 .img-pagos {
-  display: flex;
-  flex-wrap: wrap;
   width: 400px;
 }
 .img-pagos img {
-  width: 70px;
+  width: 50px;
   height: 30px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 2px;
-}
-.img-pagos .mp {
-  background-color: white;
-}
-
-.envio {
-  margin: 30px 0 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .img-envio {
-  width: 70px;
-  height: 30px;
-  margin-left: 12px;
+  width: 400px;
+  margin-top: 20px;
 }
 .img-envio img {
   width: 70px;
@@ -265,165 +265,16 @@ nav {
      object-fit: cover;
 }
 
-/*
-@media (max-width:1660px){
-  .footer{
-    height: 400px;
-    width: 100%;
-    margin-top: 200px;
-    flex-direction: column;
-    background-color: #171918;
-    position: relative;
-  }
-
-  .navegacion{
-    margin-top: 10px;
-    position: absolute;
-    left: 100px;
-      h2{
-        font-size: 25px;
-      }
-      li{
-        margin-top: 10px;
-      }
-  }
-
-  .contacto{
-    margin-top: 10px;
-    position: absolute;
-    right: -500px;
-    top: 0;
-
-    h2{
-      font-size: 25px;
-    }
-  }
-
-  .metodos{
-    position: absolute;
-    top: 130px;
-    left: 80px;
-    h2{ 
-      font-size: 20px;
-    }
-  }
-
-  .envio{
-    margin-top: 5px;
-  }
-
-  .img-pagos{
-    width: 300px;
-    img{
-      width: 50px;
-    }
-  }
-
-}
-
-@media(max-width:1200px){
-  .footer{
-    height: 700px;
-    width: 100%;
-    margin-top: 200px;
-    flex-direction: column;
-    background-color: #171918;
-    position: relative;
-  }
-
-  .navegacion{
-    top: 60px;
-    position: absolute;
-    left: 0;
-      h2{
-        font-size: 45px;
-      }
-      li{
-        margin-top: 10px;
-        font-size: 30px;
-      }
-  }
-
-  .contacto{
-    position: absolute;
-    right: -680px;
-    top: 60px;
-    i{
-      font-size: 45px;
-      padding: 5px;
-    }
-
-    h2{
-      font-size: 45px;
-    }
-
-    li{
-      font-size: 25px;
-    }
-  }
-
-  .metodos{
-    position: absolute;
-    top: 300px;
-    left: 0;
-    h2{ 
-      font-size: 45px;
-    }
-  }
-
-  .envio{
-    margin-top: 5px;
-  }
-
-  .img-pagos{
-    width: 300px;
-    img{
-      width: 70px;
-      height: 50px;
-    }
-  }
-
-  .img-envio{
-    width: 70px;
-    height: 50px;
-  }
-
-}
-*/
-@media (max-width: 1220px) {
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: auto;
-  }
-}
-@media (max-width: 660px) {
-  .iconos-contacto i {
-    margin: 2px 5px;
-  }
-  .footer {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .navegacion {
-    margin: 5px auto;
-  }
-  .contacto {
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto;
-  }
+@media (max-width: 680px) {
   .metodos {
     display: flex;
     flex-direction: column;
-    text-align: start;
     margin: auto;
   }
 }
 @media (max-width: 400px) {
   .img-pagos {
-    width: 300px;
-    margin: 0;
+    width: 200px;
   }
 }
 .titulo-productos {
@@ -993,12 +844,58 @@ nav {
   margin-left: 30px;
 }
 .informacion p {
-  margin: 30px 0 0 30px;
   text-align: justify;
+  margin: 30px 0 30px 30px;
   font-size: 20px;
   letter-spacing: 1px;
 }
 
+@media (max-width: 1440px) {
+  .info-1 {
+    width: 100%;
+    display: flex;
+    margin: 400px auto;
+  }
+  .informacion {
+    flex-direction: column;
+    margin: auto;
+  }
+  img {
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    margin: 15px;
+  }
+  p {
+    display: flex;
+    margin: auto;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1220px) {
+  .info-1 {
+    width: 100%;
+    display: flex;
+    margin: 400px auto;
+  }
+  .informacion {
+    flex-direction: column;
+    margin: auto;
+  }
+  img {
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    margin: 15px;
+  }
+  p {
+    display: flex;
+    margin: auto;
+    padding: 0 30px;
+  }
+}
 @media (max-width: 1024px) {
   .info-1 {
     width: 100%;
